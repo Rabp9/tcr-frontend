@@ -1,0 +1,10 @@
+{
+    "elements": {
+        "ui-view": {}
+    },
+    "attributes": {
+        "ui-view": {
+            "context": "div"
+        }
+    }
+}

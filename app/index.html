@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="tcrFrontendApp">
+<head>
+    <title>Trujillo Cletear Rutear</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="author" content="Trujillo Cletear Rutear">
+    <meta name="description" content="">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free Aurora Template">
+    <meta property="og:description" content="Free HTML5 Template created by Dominik Serafin.">
+    <meta property="og:url" content="http://serafin.io/aurora-template/">
+    <meta property="og:image" content="http://serafin.io/aurora-template/content/og_image.png">
+
+    <!-- Twitter Card -->
+    <!--
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:domain" content="">
+    <meta name="twitter:image:src" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:card" content="">
+    -->
+    
+    <!-- Stylesheets -->
+    <link href="fonts/webfont-raleway/webfont-raleway.css" rel="stylesheet" type="text/css">
+    <link href="fonts/webfont-font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+</head>
+<body>
+    <!--[if lte IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Some Helper Stuff -->
+    <div id="start" class="start">&nbsp;</div>
+    <div class="maxwidth1050">&nbsp;</div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__hamburger">
+                <div class="header__hamburger-block">&nbsp;</div>
+                <div class="header__hamburger-block">&nbsp;</div>
+                <div class="header__hamburger-block">&nbsp;</div>
+            </div>
+            <nav class="header__navigation">
+                <a href="#start" class="js-smooth-scroll">
+                    <div class="js-smooth-scroll  header__navigation-element">Inicio</div>
+                </a>
+                <a href="#experience" class="js-smooth-scroll">
+                    <div class="header__navigation-element  header__navigation-element--experience">Quienes Somos</div>
+                </a>
+                <a href="#features" class="js-smooth-scroll">
+                    <div class="header__navigation-element  header__navigation-element--features">Eventos</div>
+                </a>
+                <a href="#realizations" class="js-smooth-scroll">
+                    <div class="header__navigation-element  header__navigation-element--realizations">Galería</div>
+                </a>
+                <a href="#contact" class="js-smooth-scroll">
+                    <div class="header__navigation-element  header__navigation-element--contact">Contactos</div>
+                </a>
+            </nav>
+
+            <a href="#start" class="header__title-wrapper  js-smooth-scroll">
+                <div class="header__title-main">Trujillo Cletear Rutear</div>
+                <div class="header__title-sub">&nbsp; &nbsp;&nbsp;<strong></strong>	Pedaleando por tu Ciudad</div>
+            </a>
+
+            <div class="header__social-icons">
+                <a target="_blank" href="https://www.youtube.com/channel/UCrXEyCGJuF8EjCs0-V7OEug"><i class="fa fa-dribbble"></i></a>
+                <a target="_blank" href="https://twitter.com/trujillocletear"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.behance.net/dominikserafin"><i class="fa fa-behance"></i></a>
+                <a target="_blank" href="https://github.com/DominikSerafin/"><i class="fa fa-github"></i></a>
+                <a target="_blank" href="https://linkedin.com/pub/dominik-serafin/a1/672/93b"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="container-fluid">
+        <div ui-view="hero"></div>
+        <div class="content">
+            <div ui-view="quienesSomos"></div>
+            <div ui-view="eventos"></div>
+            <div ui-view="galeria"></div>
+            <div ui-view="contactenos"></div>
+            <!-- Footer -->
+            <footer id="footer" class="footer">
+                <div class="footer__wrapper">
+                    <div class="footer__copyright">Derechos Reservados  &copy; 2017</div>
+                    <a href="http://serafin.io/?utm_source=Aurora-Template&utm_medium=Footer-Image&utm_campaign=Freebie" target="_blank" class="footer__image">&nbsp;</a>
+                </div>
+            </footer>
+            <!-- End Footer -->
+        </div>
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/hero.js"></script>
+    <script src="scripts/controllers/quienessomos.js"></script>
+    <script src="scripts/controllers/eventos.js"></script>
+    <script src="scripts/controllers/galeria.js"></script>
+    <script src="scripts/controllers/contactenos.js"></script>
+    <!-- endbuild -->
+    
+    <script src="scripts/dependencies.min.js"></script>
+    <script src="scripts/global.js"></script>
+</body>
+</html>
