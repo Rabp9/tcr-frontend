@@ -18,7 +18,64 @@ crear bd 2----------------------------------------------------------------------
 crear bd 3----------------------------------------------------------------------
 crear bd 4----------------------------------------------------------------------
 crear bd 5----------------------------------------------------------------------
-implementar admin en tcr-admin-frontend 3
-implementar admin en tcr-admin-frontend 4
-implementar admin en tcr-admin-frontend 5
-plantear nuevos puntos
+implementar admin en tcr-admin-frontend 3---------------------------------------
+implementar admin en tcr-admin-frontend 4---------------------------------------
+implementar admin en tcr-admin-frontend 5---------------------------------------
+plantear nuevos puntos----------------------------------------------------------
+Replantear Menu
+Dashboard
+Colores
+Emails controller
+emails service
+emails view
+emails add view
+emails edit view
+emails controller add
+emails controller edit
+emails backend
+galeria controller
+galeria service
+galeria view
+galeria add view
+galeria edit view
+galeria controller add
+galeria controller edit
+galeria backend
+contactenos controller
+contactenos service
+contactenos view
+contactenos add view
+contactenos edit view
+contactenos controller add
+contactenos controller edit
+contactenos backend
+eventos controller
+eventos service
+eventos view
+eventos add view
+eventos edit view
+eventos controller add
+eventos controller edit
+eventos backend
+infos controller
+infos service
+infos view
+infos edit view
+infos controller edit
+infos backend
+roles controller
+roles service
+roles view
+roles add view
+roles edit view
+roles controller add
+roles controller edit
+roles backend
+users controller
+users service
+users view
+users add view
+users edit view
+users controller add
+users controller edit
+users backend
