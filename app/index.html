@@ -1,125 +1,257 @@
-<!DOCTYPE html>
-<html lang="es" ng-app="tcrFrontendApp">
+<!doctype html>
+<html ng-app="tcrFrontendApp">
 <head>
-    <title>Trujillo Cletear Rutear</title>
     <meta charset="utf-8">
+    <title ng-bind="title + ' | Trujillo Cletear Rutear'">Trujillo Cletear Rutear</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <meta name="author" content="Trujillo Cletear Rutear">
-    <meta name="description" content="">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Free Aurora Template">
-    <meta property="og:description" content="Free HTML5 Template created by Dominik Serafin.">
-    <meta property="og:url" content="http://serafin.io/aurora-template/">
-    <meta property="og:image" content="http://serafin.io/aurora-template/content/og_image.png">
-
-    <!-- Twitter Card -->
-    <!--
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:domain" content="">
-    <meta name="twitter:image:src" content="">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:creator" content="">
-    <meta name="twitter:card" content="">
-    -->
-    
-    <!-- Stylesheets -->
-    <link href="fonts/webfont-raleway/webfont-raleway.css" rel="stylesheet" type="text/css">
-    <link href="fonts/webfont-font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/yamm3/yamm/yamm.css" />
+    <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="favicon.ico" />
     <!-- endbuild -->
-    
 </head>
-<body>
+<body ng-cloak>
     <!--[if lte IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Some Helper Stuff -->
-    <div id="start" class="start">&nbsp;</div>
-    <div class="maxwidth1050">&nbsp;</div>
-    
-    <!-- Header -->
-    <header class="header">
-        <div class="header__wrapper">
-            <div class="header__hamburger">
-                <div class="header__hamburger-block">&nbsp;</div>
-                <div class="header__hamburger-block">&nbsp;</div>
-                <div class="header__hamburger-block">&nbsp;</div>
-            </div>
-            <nav class="header__navigation">
-                <a href="#start" class="js-smooth-scroll">
-                    <div class="js-smooth-scroll  header__navigation-element">Inicio</div>
-                </a>
-                <a href="#experience" class="js-smooth-scroll">
-                    <div class="header__navigation-element  header__navigation-element--experience">Quienes Somos</div>
-                </a>
-                <a href="#features" class="js-smooth-scroll">
-                    <div class="header__navigation-element  header__navigation-element--features">Eventos</div>
-                </a>
-                <a href="#realizations" class="js-smooth-scroll">
-                    <div class="header__navigation-element  header__navigation-element--realizations">Galería</div>
-                </a>
-                <a href="#contact" class="js-smooth-scroll">
-                    <div class="header__navigation-element  header__navigation-element--contact">Contactos</div>
-                </a>
-            </nav>
-
-            <a href="#start" class="header__title-wrapper  js-smooth-scroll">
-                <div class="header__title-main">Trujillo Cletear Rutear</div>
-                <div class="header__title-sub">&nbsp; &nbsp;&nbsp;<strong></strong>	Pedaleando por tu Ciudad</div>
-            </a>
-
-            <div class="header__social-icons">
-                <a target="_blank" href="https://www.youtube.com/channel/UCrXEyCGJuF8EjCs0-V7OEug"><i class="fa fa-dribbble"></i></a>
-                <a target="_blank" href="https://twitter.com/trujillocletear"><i class="fa fa-twitter"></i></a>
-                <a target="_blank" href="https://www.behance.net/dominikserafin"><i class="fa fa-behance"></i></a>
-                <a target="_blank" href="https://github.com/DominikSerafin/"><i class="fa fa-github"></i></a>
-                <a target="_blank" href="https://linkedin.com/pub/dominik-serafin/a1/672/93b"><i class="fa fa-linkedin"></i></a>
-            </div>
-        </div>
-    </header>
-    <!-- End Header -->
-
-    <div class="container-fluid">
-        <div ui-view="hero"></div>
-        <div class="content">
-            <div ui-view="quienesSomos"></div>
-            <div ui-view="eventos"></div>
-            <div ui-view="galeria"></div>
-            <div ui-view="contactenos"></div>
-            <!-- Footer -->
-            <footer id="footer" class="footer">
-                <div class="footer__wrapper">
-                    <div class="footer__copyright">Derechos Reservados  &copy; 2017</div>
-                    <a href="http://serafin.io/?utm_source=Aurora-Template&utm_medium=Footer-Image&utm_campaign=Freebie" target="_blank" class="footer__image">&nbsp;</a>
+    <!-- Add your site or application content here -->
+    <div class="header container">
+        <div class="header-center">
+            <div class="row">
+                <div class="col-sm-3 hidden-xs">
+                    <a class="navbar-brand" href="#" style="width: 192px;"><img class="img-responsive" src="images/tcr-logo.png" alt="Trujillo Cletear Rutear"></a>
                 </div>
-            </footer>
-            <!-- End Footer -->
+                <div class="col-sm-9">
+                    <div class="row hidden-xs">
+                        <ul class="nav navbar-nav hidden-xs pull-right">
+                            <li><a class="navbar-custom-link" href="mailto:{{ infos_index.email }}"><span class="glyphicon glyphicon-send"></span> {{ infos_index.email }}</a></li>
+                            <li>
+                                <a class="navbar-custom-link" ng-href="{{ infos_index.facebook_link }}" target="_blank">
+                                    <img class="glyphicon img-sn-link-md" src="images/facebook-header.svg" alt="Facebook"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <nav id="mmNav" class="navbar navbar-default yamm" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#" style="width: 90px;"><img class="img-responsive" src="images/transnv-logo.png" alt="Transportes N&V SAC"></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li ui-sref-active="active"><a class="navbar-custom-link" ui-sref="main">Home</a></li>
+                                    <li class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Nosotros <b class="caret"></b></a>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <div class="yamm-content">
+                                                    <div class="row-fluid">
+                                                        <div class="col-sm-3">
+                                                            <div class="thumbnail">
+                                                                <div class="caption">
+                                                                    <h4><a ui-sref="quienes-somos">¿Quienes Somos?</a></h4>
+                                                                    <hr>
+                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.quienes_somos_mensaje">
+                                                                    </p>
+                                                                    <p><a ui-sref="quienes-somos" class="btn btn-primary">Ver más</a></p>
+                                                                </div>
+                                                              </div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="thumbnail">
+                                                                <div class="caption">
+                                                                    <h4><a ui-sref="historia">Historia</a></h4>
+                                                                    <hr>
+                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.historia_mensaje">
+                                                                    </p>
+                                                                    <p><a ui-sref="historia" class="btn btn-primary" role="button">Ver más</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="thumbnail">
+                                                                <div class="caption">
+                                                                    <h4><a ui-sref="nuestra-flota">Nuestra Flota</a></h4>
+                                                                    <hr>
+                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.nuestra_flota_mensaje">
+                                                                    </p>
+                                                                    <p><a ui-sref="nuestra-flota" class="btn btn-primary" role="button">Ver más</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="thumbnail">
+                                                                <div class="caption">
+                                                                    <h4><a ui-sref="nuestro-personal">Nuestro Personal</a></h4>
+                                                                    <hr>
+                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.nuestro_personal_mensaje">
+                                                                    </p>
+                                                                    <p><a ui-sref="nuestro-personal" class="btn btn-primary" role="button">Ver más</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li ng-show="servicios_index.length > 0" class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Eventos <b class="caret"></b></a>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <div class="yamm-content">
+                                                    <div class="row">
+                                                        <div class="col-sm-6" ng-repeat="servicio in servicios_index">
+                                                            <div class="thumbnail">
+                                                                <a ui-sref="servicios({id: {{ servicio.id }}})">
+                                                                    <img class="img-responsive" ng-src="{{ path_location + 'img/servicios/' + servicio.portada }}" alt="{{ servicio.titulo }}">
+                                                                </a>
+                                                                <div class="caption">
+                                                                    <h4>
+                                                                        <a ui-sref="servicios({id: {{ servicio.id }}})">
+                                                                            {{ servicio.titulo }}
+                                                                        </a>
+                                                                    </h4>
+                                                                    <hr>
+                                                                    <p ng-bind-html="servicio.resumen"></p>
+                                                                    <p><a ui-sref="servicios({id: {{ servicio.id }}})" class="btn btn-primary" role="button">Ver más</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li ng-show="noticias_index.length > 0" class="dropdown" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Galería <b class="caret"></b></a>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <div class="yamm-content">
+                                                    <ul class="media-list">
+                                                        <li class="media" style="width: 450px;" ng-repeat="noticia in noticias_index">
+                                                            <div class="media-left">
+                                                                <a ui-sref="noticias({id: {{ noticia.id }}})">
+                                                                    <img style="width: 150px;" ng-src="{{ path_location + 'img/noticias/' + noticia.portada }}" alt="{{ noticia.title }}">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <p ng-bind-html="noticia.titulo"></p>
+                                                                <span ng-bind-html="noticia.subtitulo"></span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Contáctanos <b class="caret"></b></a>
+                                        <ul role="menu" class="dropdown-menu">
+                                            <li>
+                                                <div class="yamm-content">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <div class="thumbnail">
+                                                                <div class="caption">
+                                                                    <h4>Directorio Telefónico</h4>
+                                                                    <hr>
+                                                                    <p ng-bind-html="infos_index.directorio_mensaje"></p>
+                                                                    <p><a ui-sref="directorio" class="btn btn-primary" role="button">Ver más</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-2">
+                                                            <img class="img-responsive" src="images/telefono-icon.png" alt="Directorio Telefónico">
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="thumbnail">
+                                                                <div class="caption">
+                                                                    <h4>Ubicación</h4>
+                                                                    <hr>
+                                                                    <p ng-bind-html="infos_index.ubicacion_mensaje"></p>
+                                                                    <p><a ui-sref="ubicacion" class="btn btn-default" role="button">Ver más</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-2">
+                                                            <img class="img-responsive" src="images/mapa-icon.png" alt="Directorio Telefónico">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
-    </script>
+    <div class="container-fluid">
+        <ui-view ng-hide='layout.loading' ></ui-view>
+    </div>
+    <div class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-sm-4 center">
+                    <h3>Enlaces de Interés</h3>
+                    <p>
+                        <a class="btn-link" ng-href="{{ infos_index.enlace_1_link }}">{{ infos_index.enlace_1_titulo }}</a>
+                    </p>
+                    <p>
+                        <a class="btn-link" ng-href="{{ infos_index.enlace_2_link }}">{{ infos_index.enlace_2_titulo }}</a>
+                    </p>
+                    <p>
+                        <a class="btn-link" ng-href="{{ infos_index.enlace_3_link }}">{{ infos_index.enlace_3_titulo }}</a>
+                    </p>
+                </div>
+                <div class="col-sm-4 center">
+                    <h3>Síguenos en</h3>
+                    <a ng-href="{{ infos_index.facebook_link }}" target="_blank">
+                        <img class="glyphicon img-sn-link-md" src="images/facebook.svg" alt="Facebook"/>
+                    </a>
+                    <a ng-href="{{ infos_index.twitter_link }}" target="_blank">
+                        <img class="glyphicon img-sn-link-md" src="images/twitter.svg" alt="Twitter"/>
+                    </a>
+                </div>
+                <div class="col-sm-4 center">
+                    <h3>Contáctanos</h3>
+                    <address>
+                        <dl>
+                            <dt>Teléfono</dt>
+                            <dd><a style="color: white;" ng-href="tel:{{ infos_index.telefono }}">{{ infos_index.telefono }}</a></dd>
+                            <dt>Dirección</dt>
+                            <dd>{{ infos_index.direccion }}</dd>
+                        </dl>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div style="text-align: center; height: 30px;" ng-bind-html="infos_index.copyright">
+        </div>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -131,21 +263,44 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-mega-menu/src/js/angular-mega-menu.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ngprogress/build/ngprogress.min.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="bower_components/angular-waypoints/dist/angular-waypoints.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/angular-slick/dist/slick.js"></script>
+    <script src="bower_components/picturefill/dist/picturefill.js"></script>
+    <script src="bower_components/angular-picture/src/angular-picture.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/hero.js"></script>
-    <script src="scripts/controllers/quienessomos.js"></script>
-    <script src="scripts/controllers/eventos.js"></script>
-    <script src="scripts/controllers/galeria.js"></script>
-    <script src="scripts/controllers/contactenos.js"></script>
+    <script src="scripts/controllers/quienes-somos.js"></script>
+    <script src="scripts/controllers/historia.js"></script>
+    <script src="scripts/controllers/directorio.js"></script>
+    <script src="scripts/controllers/ubicacion.js"></script>
+    <script src="scripts/controllers/servicios.js"></script>
+    <script src="scripts/controllers/noticias.js"></script>
+    <script src="scripts/controllers/ubicacion.js"></script>
+    <script src="scripts/services/infosservice.js"></script>
+    <script src="scripts/services/envservice.js"></script>
+    <script src="scripts/services/slidesservice.js"></script>
+    <script src="scripts/filters/img-responsive.js"></script>
+    <script src="scripts/services/serviciosservice.js"></script>
+    <script src="scripts/services/noticiasservice.js"></script>
+    <script src="scripts/services/clientesservice.js"></script>
+    <script src="scripts/services/cabecerasservice.js"></script>
+    <script src="scripts/services/contactosservice.js"></script>
+    <script src="scripts/controllers/nuestra-flota.js"></script>
+    <script src="scripts/controllers/nuestro-personal.js"></script>
+    <script src="scripts/controllers/certificaciones.js"></script>
+    <script src="scripts/controllers/polizas_seguros.js"></script>
     <!-- endbuild -->
-    
-    <script src="scripts/dependencies.min.js"></script>
-    <script src="scripts/global.js"></script>
 </body>
 </html>

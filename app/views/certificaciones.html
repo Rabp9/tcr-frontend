@@ -1,0 +1,18 @@
+<div ng-if="cabecera !== 'img/cabeceras/null'">
+    <picture picturefill>
+        <source media='(max-width: 767px)' ng-attr-srcset="{{ getCabeceraSrc(cabecera, '_small') }}">
+        <source media='(min-width: 767px)' ng-attr-srcset="{{ getCabeceraSrc(cabecera, '_large') }}">
+        <img class="img-responsive" alt="Certificaciones" style="width: 100%" ng-src="{{ getCabeceraSrc(cabecera, '_large') }}">
+    </picture>
+</div>
+<ol class="breadcrumb">
+    <li><a ui-sref="main">Home</a></li>
+    <li class="active">Certificaciones</li>
+</ol>
+<div class="container">
+    <h2>Certificaciones</h2>
+    <hr>
+    <div ng-bind-html="infos.certificaciones">
+    </div>
+</div>
+<br>

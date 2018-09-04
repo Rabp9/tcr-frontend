@@ -1,0 +1,194 @@
+.img-slider {
+    margin: auto;
+    width: 100%;
+}
+
+#ngProgress {
+    background-color: $color-primary !important;
+}
+
+.container-fluid {
+    @include container-fixed(0);
+}
+
+.container-footer {
+    @media (min-width: $screen-sm-min) {
+        @include container-fixed(300px);
+    }
+    @media (max-width: $screen-xs-max) {
+        @include container-fixed(100px);
+    }
+}
+
+.header-section {
+    padding: 0px 10px;
+    display: flex;
+    margin-bottom: 15px;
+    color: $color-white;
+    align-items: center;
+    height: 60px;
+    
+    -webkit-box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+    
+    background: rgba(52,59,105,1);
+    background: -moz-linear-gradient(left, rgba(52,59,105,1) 0%, rgba(97,100,131,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(52,59,105,1)), color-stop(100%, rgba(97,100,131,1)));
+    background: -webkit-linear-gradient(left, rgba(52,59,105,1) 0%, rgba(97,100,131,1) 100%);
+    background: -o-linear-gradient(left, rgba(52,59,105,1) 0%, rgba(97,100,131,1) 100%);
+    background: -ms-linear-gradient(left, rgba(52,59,105,1) 0%, rgba(97,100,131,1) 100%);
+    background: linear-gradient(to right, rgba(52,59,105,1) 0%, rgba(97,100,131,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343b69', endColorstr='#616483', GradientType=1 );
+}
+
+.navbar-transparent {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
+.desplazamiento {
+    padding: 10px 0px; 
+    text-align: center;
+    a {
+        color: $color-primary;
+    }
+    span {
+        font-size: 2em;
+    }
+}
+
+.footer {
+    background: $color-primary;
+    color: $color-white;
+}
+
+.img-sn-link-md {
+    width: 18px;
+    top: -4px;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-default {
+    border: none;
+}
+
+.yamm .yamm-content {
+    padding: 8px 12px;
+}
+
+.yamm-content {
+    h3 {
+        color: $color-primary;
+    }
+}
+
+.breadcrumb {
+    a {
+        color: $color-white;
+    }
+}
+
+#clientes img {
+    margin: 10px 0px;
+}
+
+.footer .btn-link {
+    color: $color-white;
+}
+
+#servicios {
+    img {
+        height: 200px;
+    }
+}
+
+#mmNav {
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.bg-servicios {
+    background-size: 100%;
+    background-position: center; 
+    @media (min-width: $screen-sm-min) {
+        height: 180px;
+    }
+    @media (max-width: $screen-xs-max) {
+        height: 90px;
+    }
+}
+
+.non-underscore:hover {
+    text-decoration: none;
+}
+
+#mmNav {
+    @media (max-width: $screen-xs-max) {
+        margin: 0px;
+    }
+    .navbar-header {
+        @media (max-width: $screen-xs-max) {
+            height: 50px;
+        }
+    }
+}
+
+.header {
+    position: absolute; 
+    top: 10px;
+    left: 50%;
+    z-index: 99;
+    .header-center {
+        position: relative; 
+        left: -50%; 
+    }
+}
+
+.navbar-default {
+    background-color: rgba($color-default, 0);
+    .navbar-nav a.navbar-custom-link {
+        font-weight: bold;
+        color: $color-secondary;
+        text-shadow: -2px 0 $color-white, 0 2px $color-white, 2px 0 $color-white, 0 -2px $color-white;
+        letter-spacing: 5px;
+    }
+}
+
+.navbar-nav a.navbar-custom-link {
+    font-weight: bold;
+    color: $color-secondary;
+    text-shadow: -2px 0 $color-white, 0 2px $color-white, 2px 0 $color-white, 0 -2px $color-white;
+    letter-spacing: 5px;
+}
+
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(#eeeeee, 0.5);
+}
+
+.thumbnail {
+    &.eventos-principales {
+        -webkit-box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 50px -10px rgba(0,0,0,0.75);
+        min-height: 410px;
+    }
+    &.eventos {
+        border: 1px solid $color-default;
+    }
+    a {
+        color: $color-primary;
+    }
+    .btn-primary {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+}

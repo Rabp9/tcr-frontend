@@ -1,0 +1,27 @@
+<div ng-if="cabecera !== 'img/cabeceras/null'">
+    <picture picturefill>
+        <source media='(max-width: 767px)' ng-attr-srcset="{{ getCabeceraSrc(cabecera, '_small') }}">
+        <source media='(min-width: 767px)' ng-attr-srcset="{{ getCabeceraSrc(cabecera, '_large') }}">
+        <img class="img-responsive" alt="¿Quienes Somos?" style="width: 100%" ng-src="{{ getCabeceraSrc(cabecera, '_large') }}">
+    </picture>
+</div>
+<ol class="breadcrumb">
+    <li><a ui-sref="main">Home</a></li>
+    <li><a ui-sref="quienes-somos">Nosotros</a></li>
+    <li class="active">¿Quiénes Somos?</li>
+</ol>
+<div class="container">
+    <h2>Transportes N&V SAC</h2>
+    <hr>
+    <div ng-bind-html="infos.quienes_somos">
+    </div>
+    <h2>Misión</h2>
+    <hr>
+    <div ng-bind-html="infos.mision">
+    </div>
+    <h2>Visión</h2>
+    <hr>
+    <div ng-bind-html="infos.vision">
+    </div>
+</div>
+<br>

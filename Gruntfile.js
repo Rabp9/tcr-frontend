@@ -1,4 +1,4 @@
-// Generated on 2018-06-04 using generator-angular 0.16.0
+// Generated on 2017-08-09 using generator-angular 0.16.0
 'use strict';
 
 // # Globbing
@@ -425,6 +425,14 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>',
+          dest: '<%= yeoman.dist %>',
+          src: [
+            'uib/**'
+          ]
         }]
       },
       styles: {
@@ -510,7 +518,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
-    'test',
+    //'test',
     'build'
   ]);
 };

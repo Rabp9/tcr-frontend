@@ -1,10 +1,27 @@
 {
     "elements": {
-        "ui-view": {}
+        "ui-view": {},
+        "ng-map": {},
+        "slick": {}
     },
     "attributes": {
+        "zum-waypoint": {
+            "context": "div"
+        },
+        "uib-dropdown-toggle": {
+            "context": "a"
+        },
         "ui-view": {
             "context": "div"
+        },
+        "map-lazy-load": {
+            "context": "div"
+        },
+        "ui-sref-active": {
+            "context": "li"
+        },
+        "ui-sref": {
+            "context": "a"
         }
     }
 }

@@ -1,0 +1,17 @@
+<div ng-if="imagen !== 'img/cabeceras/null'">
+    <div class="bg-servicios" ng-style="style">
+    </div>
+</div>
+<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li class="active">{{ servicio.titulo }}</li>
+</ol>
+<div class="container">
+    <h2>{{ servicio.titulo }}</h2>
+    <small>{{ servicio.subtitulo }}</small>
+    <hr>
+    <div ng-bind-html="servicio.contenido">
+    </div>
+</div>
+<br>
