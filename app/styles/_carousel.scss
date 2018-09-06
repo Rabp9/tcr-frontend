@@ -1,19 +1,13 @@
 .carousel {
     @media (min-width: $screen-sm-min) {
-        /*
-        height: -webkit-calc(86vh - #{$navbar-height});
-        height:    -moz-calc(86vh - #{$navbar-height});
-        height:         calc(86vh - #{$navbar-height});
-        */
-        
-        height: -webkit-calc(90vh);
-        height:    -moz-calc(90vh);
-        height:         calc(90vh);
-        
-        min-height: 200px;
+        height: -webkit-calc(90vh - #{$navbar-height});
+        height:    -moz-calc(90vh - #{$navbar-height});
+        height:         calc(90vh - #{$navbar-height});
+
+        min-height: 160px;
     }
     @media (max-width: $screen-xs-max) {
-        height: 200px;
+        height: 160px;
     }
     .item {
         @extend .carousel;

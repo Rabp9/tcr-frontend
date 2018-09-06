@@ -27,182 +27,180 @@
 
     <!-- Add your site or application content here -->
     <div class="header container">
-        <div class="header-center">
-            <div class="row">
-                <div class="col-sm-3 hidden-xs">
-                    <a class="navbar-brand" href="#" style="width: 192px;"><img class="img-responsive" src="images/tcr-logo.png" alt="Trujillo Cletear Rutear"></a>
+        <div class="row">
+            <div class="col-sm-3 hidden-xs">
+                <a class="navbar-brand" href="#" style="width: 192px;"><img class="img-responsive" src="images/tcr-logo.png" alt="Trujillo Cletear Rutear"></a>
+            </div>
+            <div class="col-sm-9">
+                <div class="row hidden-xs">
+                    <ul class="nav navbar-nav hidden-xs pull-right">
+                        <li><a class="navbar-custom-link" href="mailto:{{ infos_index.email }}"><span class="glyphicon glyphicon-send"></span> {{ infos_index.email }}</a></li>
+                        <li>
+                            <a class="navbar-custom-link" ng-href="{{ infos_index.facebook_link }}" target="_blank">
+                                <img class="glyphicon img-sn-link-md" src="images/facebook-header.svg" alt="Facebook"/>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-9">
-                    <div class="row hidden-xs">
-                        <ul class="nav navbar-nav hidden-xs pull-right">
-                            <li><a class="navbar-custom-link" href="mailto:{{ infos_index.email }}"><span class="glyphicon glyphicon-send"></span> {{ infos_index.email }}</a></li>
-                            <li>
-                                <a class="navbar-custom-link" ng-href="{{ infos_index.facebook_link }}" target="_blank">
-                                    <img class="glyphicon img-sn-link-md" src="images/facebook-header.svg" alt="Facebook"/>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <nav id="mmNav" class="navbar navbar-default yamm" role="navigation">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#" style="width: 90px;"><img class="img-responsive" src="images/transnv-logo.png" alt="Transportes N&V SAC"></a>
-                            </div>
-                            <div class="collapse navbar-collapse" id="js-navbar-collapse">
-                                <ul class="nav navbar-nav">
-                                    <li ui-sref-active="active"><a class="navbar-custom-link" ui-sref="main">Home</a></li>
-                                    <li class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
-                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Nosotros <b class="caret"></b></a>
-                                        <ul role="menu" class="dropdown-menu">
-                                            <li>
-                                                <div class="yamm-content">
-                                                    <div class="row-fluid">
-                                                        <div class="col-sm-3">
-                                                            <div class="thumbnail">
-                                                                <div class="caption">
-                                                                    <h4><a ui-sref="quienes-somos">¿Quienes Somos?</a></h4>
-                                                                    <hr>
-                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.quienes_somos_mensaje">
-                                                                    </p>
-                                                                    <p><a ui-sref="quienes-somos" class="btn btn-primary">Ver más</a></p>
-                                                                </div>
-                                                              </div>
-                                                        </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="thumbnail">
-                                                                <div class="caption">
-                                                                    <h4><a ui-sref="historia">Historia</a></h4>
-                                                                    <hr>
-                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.historia_mensaje">
-                                                                    </p>
-                                                                    <p><a ui-sref="historia" class="btn btn-primary" role="button">Ver más</a></p>
-                                                                </div>
+                <div class="row">
+                    <nav id="mmNav" class="navbar navbar-default yamm" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#" style="width: 90px;"><img class="img-responsive" src="images/transnv-logo.png" alt="Transportes N&V SAC"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li ui-sref-active="active"><a class="navbar-custom-link" ui-sref="main">Home</a></li>
+                                <li class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                    <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Nosotros <b class="caret"></b></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li>
+                                            <div class="yamm-content">
+                                                <div class="row-fluid">
+                                                    <div class="col-sm-3">
+                                                        <div class="thumbnail">
+                                                            <div class="caption">
+                                                                <h4><a ui-sref="quienes-somos">¿Quienes Somos?</a></h4>
+                                                                <hr>
+                                                                <p style="text-align: justify;" ng-bind-html="infos_index.quienes_somos_mensaje">
+                                                                </p>
+                                                                <p><a ui-sref="quienes-somos" class="btn btn-primary">Ver más</a></p>
+                                                            </div>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="thumbnail">
+                                                            <div class="caption">
+                                                                <h4><a ui-sref="historia">Historia</a></h4>
+                                                                <hr>
+                                                                <p style="text-align: justify;" ng-bind-html="infos_index.historia_mensaje">
+                                                                </p>
+                                                                <p><a ui-sref="historia" class="btn btn-primary" role="button">Ver más</a></p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="thumbnail">
-                                                                <div class="caption">
-                                                                    <h4><a ui-sref="nuestra-flota">Nuestra Flota</a></h4>
-                                                                    <hr>
-                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.nuestra_flota_mensaje">
-                                                                    </p>
-                                                                    <p><a ui-sref="nuestra-flota" class="btn btn-primary" role="button">Ver más</a></p>
-                                                                </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="thumbnail">
+                                                            <div class="caption">
+                                                                <h4><a ui-sref="nuestra-flota">Nuestra Flota</a></h4>
+                                                                <hr>
+                                                                <p style="text-align: justify;" ng-bind-html="infos_index.nuestra_flota_mensaje">
+                                                                </p>
+                                                                <p><a ui-sref="nuestra-flota" class="btn btn-primary" role="button">Ver más</a></p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-3">
-                                                            <div class="thumbnail">
-                                                                <div class="caption">
-                                                                    <h4><a ui-sref="nuestro-personal">Nuestro Personal</a></h4>
-                                                                    <hr>
-                                                                    <p style="text-align: justify;" ng-bind-html="infos_index.nuestro_personal_mensaje">
-                                                                    </p>
-                                                                    <p><a ui-sref="nuestro-personal" class="btn btn-primary" role="button">Ver más</a></p>
-                                                                </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="thumbnail">
+                                                            <div class="caption">
+                                                                <h4><a ui-sref="nuestro-personal">Nuestro Personal</a></h4>
+                                                                <hr>
+                                                                <p style="text-align: justify;" ng-bind-html="infos_index.nuestro_personal_mensaje">
+                                                                </p>
+                                                                <p><a ui-sref="nuestro-personal" class="btn btn-primary" role="button">Ver más</a></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li ng-show="servicios_index.length > 0" class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
-                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Eventos <b class="caret"></b></a>
-                                        <ul role="menu" class="dropdown-menu">
-                                            <li>
-                                                <div class="yamm-content">
-                                                    <div class="row">
-                                                        <div class="col-sm-6" ng-repeat="servicio in servicios_index">
-                                                            <div class="thumbnail">
-                                                                <a ui-sref="servicios({id: {{ servicio.id }}})">
-                                                                    <img class="img-responsive" ng-src="{{ path_location + 'img/servicios/' + servicio.portada }}" alt="{{ servicio.titulo }}">
-                                                                </a>
-                                                                <div class="caption">
-                                                                    <h4>
-                                                                        <a ui-sref="servicios({id: {{ servicio.id }}})">
-                                                                            {{ servicio.titulo }}
-                                                                        </a>
-                                                                    </h4>
-                                                                    <hr>
-                                                                    <p ng-bind-html="servicio.resumen"></p>
-                                                                    <p><a ui-sref="servicios({id: {{ servicio.id }}})" class="btn btn-primary" role="button">Ver más</a></p>
-                                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li ng-show="servicios_index.length > 0" class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                    <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Eventos <b class="caret"></b></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li>
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="col-sm-6" ng-repeat="servicio in servicios_index">
+                                                        <div class="thumbnail">
+                                                            <a ui-sref="servicios({id: {{ servicio.id }}})">
+                                                                <img class="img-responsive" ng-src="{{ path_location + 'img/servicios/' + servicio.portada }}" alt="{{ servicio.titulo }}">
+                                                            </a>
+                                                            <div class="caption">
+                                                                <h4>
+                                                                    <a ui-sref="servicios({id: {{ servicio.id }}})">
+                                                                        {{ servicio.titulo }}
+                                                                    </a>
+                                                                </h4>
+                                                                <hr>
+                                                                <p ng-bind-html="servicio.resumen"></p>
+                                                                <p><a ui-sref="servicios({id: {{ servicio.id }}})" class="btn btn-primary" role="button">Ver más</a></p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li ng-show="noticias_index.length > 0" class="dropdown" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
-                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Galería <b class="caret"></b></a>
-                                        <ul role="menu" class="dropdown-menu">
-                                            <li>
-                                                <div class="yamm-content">
-                                                    <ul class="media-list">
-                                                        <li class="media" style="width: 450px;" ng-repeat="noticia in noticias_index">
-                                                            <div class="media-left">
-                                                                <a ui-sref="noticias({id: {{ noticia.id }}})">
-                                                                    <img style="width: 150px;" ng-src="{{ path_location + 'img/noticias/' + noticia.portada }}" alt="{{ noticia.title }}">
-                                                                </a>
-                                                            </div>
-                                                            <div class="media-body">
-                                                                <p ng-bind-html="noticia.titulo"></p>
-                                                                <span ng-bind-html="noticia.subtitulo"></span>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
-                                        <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Contáctanos <b class="caret"></b></a>
-                                        <ul role="menu" class="dropdown-menu">
-                                            <li>
-                                                <div class="yamm-content">
-                                                    <div class="row">
-                                                        <div class="col-sm-4">
-                                                            <div class="thumbnail">
-                                                                <div class="caption">
-                                                                    <h4>Directorio Telefónico</h4>
-                                                                    <hr>
-                                                                    <p ng-bind-html="infos_index.directorio_mensaje"></p>
-                                                                    <p><a ui-sref="directorio" class="btn btn-primary" role="button">Ver más</a></p>
-                                                                </div>
-                                                            </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li ng-show="noticias_index.length > 0" class="dropdown" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                    <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Galería <b class="caret"></b></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li>
+                                            <div class="yamm-content">
+                                                <ul class="media-list">
+                                                    <li class="media" style="width: 450px;" ng-repeat="noticia in noticias_index">
+                                                        <div class="media-left">
+                                                            <a ui-sref="noticias({id: {{ noticia.id }}})">
+                                                                <img style="width: 150px;" ng-src="{{ path_location + 'img/noticias/' + noticia.portada }}" alt="{{ noticia.title }}">
+                                                            </a>
                                                         </div>
-                                                        <div class="col-sm-2">
-                                                            <img class="img-responsive" src="images/telefono-icon.png" alt="Directorio Telefónico">
+                                                        <div class="media-body">
+                                                            <p ng-bind-html="noticia.titulo"></p>
+                                                            <span ng-bind-html="noticia.subtitulo"></span>
                                                         </div>
-                                                        <div class="col-sm-4">
-                                                            <div class="thumbnail">
-                                                                <div class="caption">
-                                                                    <h4>Ubicación</h4>
-                                                                    <hr>
-                                                                    <p ng-bind-html="infos_index.ubicacion_mensaje"></p>
-                                                                    <p><a ui-sref="ubicacion" class="btn btn-default" role="button">Ver más</a></p>
-                                                                </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
+                                    <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Contáctanos <b class="caret"></b></a>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li>
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="thumbnail">
+                                                            <div class="caption">
+                                                                <h4>Directorio Telefónico</h4>
+                                                                <hr>
+                                                                <p ng-bind-html="infos_index.directorio_mensaje"></p>
+                                                                <p><a ui-sref="directorio" class="btn btn-primary" role="button">Ver más</a></p>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-2">
-                                                            <img class="img-responsive" src="images/mapa-icon.png" alt="Directorio Telefónico">
                                                         </div>
                                                     </div>
+                                                    <div class="col-sm-2">
+                                                        <img class="img-responsive" src="images/telefono-icon.png" alt="Directorio Telefónico">
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="thumbnail">
+                                                            <div class="caption">
+                                                                <h4>Ubicación</h4>
+                                                                <hr>
+                                                                <p ng-bind-html="infos_index.ubicacion_mensaje"></p>
+                                                                <p><a ui-sref="ubicacion" class="btn btn-default" role="button">Ver más</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <img class="img-responsive" src="images/mapa-icon.png" alt="Directorio Telefónico">
+                                                    </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>

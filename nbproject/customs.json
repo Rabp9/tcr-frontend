@@ -8,11 +8,17 @@
         "zum-waypoint": {
             "context": "div"
         },
+        "uib-carousel": {
+            "context": "div"
+        },
         "uib-dropdown-toggle": {
             "context": "a"
         },
         "ui-view": {
             "context": "div"
+        },
+        "picturefill": {
+            "context": "picture"
         },
         "map-lazy-load": {
             "context": "div"
