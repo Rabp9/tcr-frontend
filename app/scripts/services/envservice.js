@@ -14,13 +14,13 @@ angular.module('tcrFrontendApp')
             switch (window.location.hostname) {
                 case 'localhost':
                     return 'http://localhost:8000/transnv-backend/';
-                case 'transnv.robertobocanegra.com':
+                case 'tcr.robertobocanegra.com':
                     return 'http://transnv.robertobocanegra.com/api/';
-                case 'www.transnv.robertobocanegra.com':
+                case 'www.tcr.robertobocanegra.com':
                     return 'http://transnv.robertobocanegra.com/api/';
-                case 'transnv.com.pe':
+                case 'tcr.com.pe':
                     return 'http://transnv.com.pe/api/';
-                case 'www.transnv.com.pe':
+                case 'www.tcr.com.pe':
                     return 'http://transnv.com.pe/api/';
             }
         }

@@ -171,6 +171,58 @@
     }
 }
 
-.eventos-principales:hover {
-    
+.eventos-principales {
+    border: none;
+    figure {
+        height: 160px; /*container-width*/
+        overflow: hidden; /*hide bounds of image */
+        margin: 0px;   /*reset margin of figure tag*/
+        img{
+           display: block; /*remove inline-block spaces*/
+           width: 100%; /*make image streatch*/
+        }
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: $color-primary;
+}
+
+.containerimg {
+    position: relative;
+    width: 100%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerimg:hover .image {
+  opacity: 0.3;
+}
+
+.containerimg:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
