@@ -13,7 +13,7 @@ angular.module('tcrFrontendApp')
         getHost: function() {
             switch (window.location.hostname) {
                 case 'localhost':
-                    return 'http://localhost:8000/transnv-backend/';
+                    return 'http://localhost:8000/tcr-backend/';
                 case 'tcr.robertobocanegra.com':
                     return 'http://transnv.robertobocanegra.com/api/';
                 case 'www.tcr.robertobocanegra.com':
