@@ -145,20 +145,18 @@ angular
     $stateProvider.state(polizasSegurosState);
     $urlRouterProvider.when('', '/');
 })
-.run(function($rootScope, $state, $window, $sce, envservice, infosservice, serviciosservice,
-    noticiasservice, $q) {
+.run(function($rootScope, $state, $window, $sce, envservice, infosservice, eventosservice, $q) {
     $rootScope.path_location = envservice.getHost();
     
-    var search = ['quienes_somos_mensaje', 'historia_mensaje', 'directorio_mensaje',
+    var search = ['quienes_somos_mensaje', 'directorio_mensaje',
     'ubicacion_mensaje', 'telefono', 'email', 'facebook_link', 'enlace_1_titulo',
     'enlace_2_titulo', 'enlace_3_titulo', 'enlace_1_link', 'enlace_2_link', 'enlace_3_link',
-    'twitter_link', 'direccion', 'copyright', 'nuestra_flota_mensaje', 'nuestro_personal_mensaje'];
+    'twitter_link', 'direccion', 'copyright'];
     
     $rootScope.init = function() {
         $q.all([
              infosservice.getDataMany(search).$promise,
-             serviciosservice.getSome({amount: 2}).$promise,
-             noticiasservice.getSome({amount: 3}).$promise
+             eventosservice.getSome({amount: 2}).$promise
         ]).then(function(data) {
             $rootScope.infos_index = data[0].info;
             $rootScope.servicios_index = data[1].servicios;
