@@ -9,7 +9,7 @@
  */
 angular.module('tcrFrontendApp')
 .controller('MainCtrl', function ($scope, $q, $rootScope, slidesservice, $sce, 
-    infosservice, imgResponsiveFilter, serviciosservice, noticiasservice, clientesservice, NgMap,
+    infosservice, imgResponsiveFilter, /* serviciosservice, noticiasservice, */clientesservice, NgMap,
     ngProgressFactory) {
         
     $scope.myInterval = 4000;
@@ -29,16 +29,18 @@ angular.module('tcrFrontendApp')
         return $q.all([
             slidesservice.get().$promise,
             infosservice.getDataMany(search).$promise,
-            serviciosservice.getSome({amount: 2}).$promise,
-            noticiasservice.get().$promise,
-            clientesservice.get().$promise
+            //serviciosservice.getSome({amount: 2}).$promise,
+            //noticiasservice.get().$promise,
+//            clientesservice.get().$promise
         ]).then(function(data) {
             $scope.slides = data[0].slides;
             $scope.infos = data[1].info;
+            /*
             $scope.servicios = data[2].servicios;
             $scope.noticias = data[3].noticias;
             $scope.clientes = data[4].clientes;
             $scope.progressbar.complete();
+            */
         });
     };
     
