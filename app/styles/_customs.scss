@@ -226,3 +226,28 @@
   font-size: 16px;
   padding: 16px 32px;
 }
+
+.yamm .dropdown.yamm-fw .dropdown-menu, .yamm-content .thumbnail {
+    background-color: $color-white;
+}
+
+.yamm-content .thumbnail {
+    border-width: 0px;
+    border-right-width: 2px;
+    border-right-color: $color-black;
+}
+
+.yamm-item {
+    &.yamm-wb {
+        border-right: 1px solid $color-primary;
+    }
+    h4 a {
+        text-decoration: none;
+        color: $color-third;
+    }
+    hr {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        color: $color-third;
+    }
+}

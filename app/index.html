@@ -62,48 +62,31 @@
                                         <li>
                                             <div class="yamm-content">
                                                 <div class="row-fluid">
-                                                    <div class="col-sm-3">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h4><a ui-sref="quienes-somos">¿Quienes Somos?</a></h4>
-                                                                <hr>
-                                                                <p style="text-align: justify;" ng-bind-html="infos_index.quienes_somos_mensaje">
-                                                                </p>
-                                                                <p><a ui-sref="quienes-somos" class="btn btn-primary">Ver más</a></p>
-                                                            </div>
-                                                          </div>
-                                                    </div>
-                                                    <div class="col-sm-3">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h4><a ui-sref="historia">Historia</a></h4>
-                                                                <hr>
-                                                                <p style="text-align: justify;" ng-bind-html="infos_index.historia_mensaje">
-                                                                </p>
-                                                                <p><a ui-sref="historia" class="btn btn-primary" role="button">Ver más</a></p>
-                                                            </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="yamm-item yamm-wb">
+                                                            <h4><a ui-sref="quienes-somos">¿Quienes Somos?</a></h4>
+                                                            <hr>
+                                                            <p style="text-align: justify;" ng-bind-html="infos_index.quienes_somos_mensaje">
+                                                            </p>
+                                                            <p><a ui-sref="quienes-somos" class="btn btn-success">Ver más</a></p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-3">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h4><a ui-sref="nuestra-flota">Nuestra Flota</a></h4>
-                                                                <hr>
-                                                                <p style="text-align: justify;" ng-bind-html="infos_index.nuestra_flota_mensaje">
-                                                                </p>
-                                                                <p><a ui-sref="nuestra-flota" class="btn btn-primary" role="button">Ver más</a></p>
-                                                            </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="yamm-item yamm-wb">
+                                                            <h4><a ui-sref="historia">Historia</a></h4>
+                                                            <hr>
+                                                            <p style="text-align: justify;" ng-bind-html="infos_index.historia_mensaje">
+                                                            </p>
+                                                            <p><a ui-sref="historia" class="btn btn-success" role="button">Ver más</a></p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-3">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h4><a ui-sref="nuestro-personal">Nuestro Personal</a></h4>
-                                                                <hr>
-                                                                <p style="text-align: justify;" ng-bind-html="infos_index.nuestro_personal_mensaje">
-                                                                </p>
-                                                                <p><a ui-sref="nuestro-personal" class="btn btn-primary" role="button">Ver más</a></p>
-                                                            </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="yamm-item">
+                                                            <h4><a ui-sref="nuestro-equipo">Nuestro Equipo</a></h4>
+                                                            <hr>
+                                                            <p style="text-align: justify;" ng-bind-html="infos_index.nuestro_equipo_mensaje">
+                                                            </p>
+                                                            <p><a ui-sref="nuestro-equipo" class="btn btn-success" role="button">Ver más</a></p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -161,43 +144,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown yamm-fw" uib-dropdown auto-close="outsideClick" ui-sref-active="active">
-                                    <a class="dropdown-toggle navbar-custom-link" uib-dropdown-toggle href="#">Contáctanos <b class="caret"></b></a>
-                                    <ul role="menu" class="dropdown-menu">
-                                        <li>
-                                            <div class="yamm-content">
-                                                <div class="row">
-                                                    <div class="col-sm-4">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h4>Directorio Telefónico</h4>
-                                                                <hr>
-                                                                <p ng-bind-html="infos_index.directorio_mensaje"></p>
-                                                                <p><a ui-sref="directorio" class="btn btn-primary" role="button">Ver más</a></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-2">
-                                                        <img class="img-responsive" src="images/telefono-icon.png" alt="Directorio Telefónico">
-                                                    </div>
-                                                    <div class="col-sm-4">
-                                                        <div class="thumbnail">
-                                                            <div class="caption">
-                                                                <h4>Ubicación</h4>
-                                                                <hr>
-                                                                <p ng-bind-html="infos_index.ubicacion_mensaje"></p>
-                                                                <p><a ui-sref="ubicacion" class="btn btn-default" role="button">Ver más</a></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-2">
-                                                        <img class="img-responsive" src="images/mapa-icon.png" alt="Directorio Telefónico">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <li ui-sref-active="active"><a class="navbar-custom-link" ui-sref="contacto">Contacto</a></li>
                             </ul>
                         </div>
                     </nav>

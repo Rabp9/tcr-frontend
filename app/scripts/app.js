@@ -148,10 +148,10 @@ angular
 .run(function($rootScope, $state, $window, $sce, envservice, infosservice, eventosservice, $q) {
     $rootScope.path_location = envservice.getHost();
     
-    var search = ['quienes_somos_mensaje', 'directorio_mensaje',
-    'ubicacion_mensaje', 'telefono', 'email', 'facebook_link', 'enlace_1_titulo',
-    'enlace_2_titulo', 'enlace_3_titulo', 'enlace_1_link', 'enlace_2_link', 'enlace_3_link',
-    'twitter_link', 'direccion', 'copyright'];
+    var search = ['quienes_somos_mensaje', 'ubicacion_mensaje', 'telefono', 'email', 
+    'facebook_link', 'enlace_1_titulo', 'enlace_2_titulo', 'enlace_3_titulo', 'enlace_1_link', 
+    'enlace_2_link', 'enlace_3_link', 'twitter_link', 'copyright', 
+    'nuestro_equipo_mensaje', 'historia_mensaje'];
     
     $rootScope.init = function() {
         $q.all([
@@ -160,7 +160,7 @@ angular
         ]).then(function(data) {
             $rootScope.infos_index = data[0].info;
             $rootScope.servicios_index = data[1].servicios;
-            $rootScope.noticias_index = data[2].noticias;
+//            $rootScope.noticias_index = data[2].noticias;
         });
     };
     

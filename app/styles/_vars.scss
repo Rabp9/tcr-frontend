@@ -1,6 +1,9 @@
-$color-default: #A5CD46;
-$color-primary: #313B6C;
-$color-secondary: #F02731;
+$color-default: #9AFF08; // verde
+$color-primary: #313B6C; // azul
+$color-secondary: #F02731; // rojo
+
+$color-third: darken($color-default, 15%);
+
 $color-white: #ffffff;
 $color-black: #000000;
 
