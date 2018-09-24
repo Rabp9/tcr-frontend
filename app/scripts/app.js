@@ -32,7 +32,7 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main',
         title: 'Home'
-    };  
+    };
     
     var quienesSomosState = {
         name: 'quienes-somos',
