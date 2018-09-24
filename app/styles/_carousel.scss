@@ -88,3 +88,20 @@
         z-index: 2;
     }
 }
+
+.carousel img {
+    filter: brightness(50%);
+}
+
+.carousel .item {
+    position: relative;
+    text-align: center;
+    color: white;
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        transform: translate(-50%, -50%);
+        z-index: 1038;
+    }
+}

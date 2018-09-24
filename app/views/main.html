@@ -1,5 +1,11 @@
 <div uib-carousel interval="myInterval" no-wrap="noWrapSlides" active="0">
     <div uib-slide ng-repeat="slide in slides track by slide.id" index="slides.indexOf(slide)">
+        <div class="centered">
+            <div class="container">
+                <h2>Titulo</h2>
+                <p>Párrafo</p>
+            </div>
+        </div>
         <picture picturefill>
             <source media='(max-width: 767px)' ng-attr-srcset="{{ getSlideSrc(slide, '_small') }}">
             <source media='(min-width: 767px)' ng-attr-srcset="{{ getSlideSrc(slide, '_large') }}">
