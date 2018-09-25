@@ -141,8 +141,7 @@
     background-color: rgba($color-default, 0);
     .navbar-nav a.navbar-custom-link {
         font-weight: bold;
-        color: $color-secondary;
-        text-shadow: -2px 0 $color-white, 0 2px $color-white, 2px 0 $color-white, 0 -2px $color-white;
+        color: $color-white;
         letter-spacing: 5px;
     }
 }
@@ -150,7 +149,6 @@
 .navbar-nav a.navbar-custom-link {
     font-weight: bold;
     color: $color-secondary;
-    text-shadow: -2px 0 $color-white, 0 2px $color-white, 2px 0 $color-white, 0 -2px $color-white;
     letter-spacing: 5px;
 }
 
@@ -249,5 +247,16 @@
         margin-top: 0px;
         margin-bottom: 5px;
         color: $color-third;
+    }
+}
+
+.navbar-nav > .active > a {
+    background-color: transparent !important;
+    color: $color-default !important;
+}
+
+.navbar-nav a {
+    &:hover {
+        color: $color-default !important;
     }
 }

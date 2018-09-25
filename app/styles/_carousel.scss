@@ -1,8 +1,8 @@
 .carousel {
     @media (min-width: $screen-sm-min) {
-        height: -webkit-calc(90vh - #{$navbar-height});
-        height:    -moz-calc(90vh - #{$navbar-height});
-        height:         calc(90vh - #{$navbar-height});
+        height: -webkit-calc(94vh - #{$navbar-height});
+        height:    -moz-calc(94vh - #{$navbar-height});
+        height:         calc(94vh - #{$navbar-height});
 
         min-height: 160px;
     }
@@ -100,7 +100,7 @@
     .centered {
         position: absolute;
         top: 50%;
-        left: 12%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1038;
     }
